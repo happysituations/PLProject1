@@ -15,10 +15,15 @@ public class CustomerApp {
 
             Customer c = CustomerDB.getCustomer(num);
 
-            String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
-            System.out.println(message);
-            System.out.println();
+            if (c.getName().equals("Unknown")){
+                    System.out.println("There is no customer "+ num +" in our records\n" );
+                }
+            else {
+                String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
+                System.out.println(message);
+                System.out.println();
 
+            }
             System.out.print("Display another customer? (y/n): ");
             System.out.print("");
             choice = sc.nextLine();
