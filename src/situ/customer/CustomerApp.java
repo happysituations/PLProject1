@@ -17,9 +17,11 @@ public class CustomerApp {
             String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
             System.out.println(message);
 
-            System.out.print("Display another customer? (y/n): ");
+            System.out.print("Display another customer? (y/n): BBBBBBBBBBBBBBBBBBBBBB");
             choice = sc.nextLine();
             System.out.println();
+
+
         }
     }
 
