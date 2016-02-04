@@ -17,7 +17,7 @@ public class CustomerApp {
             String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
             System.out.println(message);
 
-            System.out.print("Display another customer? (y/n): Hello ");
+            System.out.print("Display another customer? (y/n): Did I commit?? ");
             choice = sc.nextLine();
             System.out.println();
 
