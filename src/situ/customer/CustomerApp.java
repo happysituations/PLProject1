@@ -11,13 +11,16 @@ public class CustomerApp {
         while(choice.equalsIgnoreCase("y")) {
             System.out.print("Enter product code: ");
             String num = sc.nextLine();
+            System.out.println();
 
             Customer c = CustomerDB.getCustomer(num);
 
             String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
             System.out.println(message);
+            System.out.println();
 
-            System.out.print("Display another customer? (y/n): Did I commit?? HELLO ");
+            System.out.print("Display another customer? (y/n): ");
+            System.out.print("");
             choice = sc.nextLine();
             System.out.println();
 
