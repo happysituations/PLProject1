@@ -19,7 +19,7 @@ public class CustomerApp {
                     System.out.println("There is no customer number "+ num +" in our records.\n" );
                 }
             else {
-                String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
+                String message = c.getNameAndAddress();
                 System.out.println(message);
                 System.out.println();
 
