@@ -9,14 +9,14 @@ public class CustomerApp {
         Scanner sc = new Scanner (System.in);
         String choice = "y";
         while(choice.equalsIgnoreCase("y")) {
-            System.out.print("Enter product code: ");
+            System.out.print("Enter a customer number: ");
             String num = sc.nextLine();
             System.out.println();
 
             Customer c = CustomerDB.getCustomer(num);
 
             if (c.getName().equals("Unknown")){
-                    System.out.println("There is no customer "+ num +" in our records\n" );
+                    System.out.println("There is no customer number "+ num +" in our records.\n" );
                 }
             else {
                 String message = c.getName() + "\n" + c.getAddress() + "\n" + c.getCity() + ", " + c.getState() + " " + c.getPostalCode();
